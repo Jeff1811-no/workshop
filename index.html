@@ -9,6 +9,7 @@
     <h1>Bienvendio al Workshop</h1>
     <input id="num1" placeholder="Numero 1">
     <input id="num2" placeholder="Numero 2">
+    <button onclick="operaciones('division')">Division</button>
 </body>
   <script>
       const operaciones = (accion) =>{
@@ -16,6 +17,9 @@
           const num2= parseInt(document.getElementById('num2').value);
 
           switch(accion){
+              case 'division':
+              alert('El resultado de la division es: '+(num1/num2))
+              break;
               default:
           }
       }
