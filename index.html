@@ -11,6 +11,7 @@
     <input id="num2" placeholder="Numero 2">
     <button onclick="operaciones('sumar')">Sumar</button>
     <button onclick="operaciones('Restar')">Resta</button>
+    <button onclick="operaciones('multiplicacion')">Multiplicacion</button>
 </body>
   <script>
       const operaciones = (accion) =>{
@@ -24,7 +25,12 @@
               case 'Restar':
               alert('El resultado de la resta es:'+(num1-num2))
               break;
-            }
+            
+              case 'multiplicacion':
+               alert('El resultado de la multi es:'+(num1*num2))
+              break;
+            
+          }
       }
   </script>
 </html>
