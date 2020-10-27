@@ -10,6 +10,7 @@
     <input id="num1" placeholder="Numero 1">
     <input id="num2" placeholder="Numero 2">
     <button onclick="operaciones('sumar')">Sumar</button>
+    <button onclick="operaciones('Restar')">Resta</button>
 </body>
   <script>
       const operaciones = (accion) =>{
@@ -19,7 +20,11 @@
           switch(accion){
               default:
               alert('El resultado de la suma es:'+(num1+num2))
-          }
+          
+              case 'Restar':
+              alert('El resultado de la resta es:'+(num1-num2))
+              break;
+            }
       }
   </script>
 </html>
